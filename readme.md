@@ -20,3 +20,24 @@ Ussage: http://localhost:4000/api/v1/todos
     http://localhost:4000/api/v1/todos?page=2&limit=50&status=pend
     http://localhost:4000/api/v1/todos?id=3
 
+### Response
+```javascript
+{
+    status: 200,
+    data:[
+    {
+     id: 1,
+     title:"Todo 1",
+     description: "Todo description",
+     status: "pending"
+    }
+    ...
+    ],
+    meta: {
+        pageCount: 5,
+        total: 20,
+        limit: 4,
+        currentPage: 1
+    }
+}
+```
